@@ -20,7 +20,7 @@ Country energy mixes: Four line graphs showing the shares of fossil, renewable a
 
 Country-level changes: Three horizontal bar charts showing the change in fossil, renewable and nuclear energy shares, in percentage points, for each country between 1985 and 2024.
 
-Numerical results: The script prints the percentage-point changes for each country, as well as the mean changes and standard deviations for the selected geographical regions and across all included countries.
+Numerical results: The script prints the percentage-point changes for each country, as well as the mean changes and standard deviations for the selected regions and across all included countries.
 
 **How to run the code?**
 
