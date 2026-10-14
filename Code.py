@@ -204,8 +204,8 @@ def diff_85_24():
     
     energy_changes = {country: (fossil, renewable, nuclear) for country, fossil, renewable, nuclear in zip(countrieslist, fossildiff, rendiff, nucdiff)}
     
-    #for country, (fossil, renewable, nuclear) in energy_changes.items():
-        #print(f"{country}: Fossil {fossil:.2f} pp | Renewable {renewable:.2f} pp | Nuclear {nuclear:.2f} pp")
+    for country, (fossil, renewable, nuclear) in energy_changes.items():
+        print(f"{country}: Fossil {fossil:.2f} pp | Renewable {renewable:.2f} pp | Nuclear {nuclear:.2f} pp")
 
     Europe = [
     'Austria', 'Belarus', 'Belgium', 'Bulgaria', 'Czechia', 'Denmark',
@@ -266,5 +266,11 @@ def diff_85_24():
         print(f"Renewable: {np.mean(renewable):.2f} ± {np.std(renewable, ddof=1):.2f} pp")
         print(f"Nuclear: {np.mean(nuclear):.2f} ± {np.std(nuclear, ddof=1):.2f} pp")
 
-    #print(np.mean(fossildiff), np.mean(rendiff), np.mean(nucdiff))
-    #print(np.std(fossildiff), np.std(rendiff), np.std(nucdiff))
+    print(np.mean(fossildiff), np.mean(rendiff), np.mean(nucdiff))
+    print(np.std(fossildiff), np.std(rendiff), np.std(nucdiff))
+
+pie_1985() # makes the pie chart for 1985
+pie_2024() # makes the pie chart for 2024
+series_global() # plots the global energy mix over time
+series_countries() # plots the energy mixes's of USA, China, Russia, and India over time
+diff_85_24() # calculates the pp change in each type of energy of the total energy consumption for given countries between 1985 and 2024 and makes bar plots for them
