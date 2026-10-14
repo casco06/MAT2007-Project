@@ -8,23 +8,35 @@ Analysis of OWID Energy dataset
 
 **Link to the github with the data and the codebook (meaning of each column):** https://github.com/owid/energy-data
 
+**What does the script do?**
+
+The script produces the following outputs:
+
+Global energy consumption: Two pie charts showing the energy consumption of the 15 largest consuming countries and the combined consumption of all other countries in 1985 and 2024. The total global consumption is also displayed.
+
+Global energy mix: A line graph showing the global shares of fossil, renewable and nuclear energy from 1985 to 2024.
+
+Country energy mixes: Four line graphs showing the shares of fossil, renewable and nuclear energy for the United States, China, Russia and India over the same period.
+
+Country-level changes: Three horizontal bar charts showing the change in fossil, renewable and nuclear energy shares, in percentage points, for each country between 1985 and 2024.
+
+Numerical results: The script prints the percentage-point changes for each country, as well as the mean changes and standard deviations for the selected geographical regions and across all included countries.
+
+**How to run the code?**
+
+Make sure the packages are installed and open the code in a code editor, make sure the read function has the correct path to the Energy_data.csv file on your device. Select which functions you want to run and run the script using python.
+
 ## Questions
 
 ### 1. How has energy consumption changed globally between 1985 and 2024?
-
-**DONE!!!**
 
 - 2 plots included: 1 'Pie' chart for 1985 of total consumption and one for 2024
 
 ### 2. How has the global energy mix changed between 1985 and 2024?
 
-**DONE!!!**
-
 - 5 plots included: 1 for the renewable, nuclear and fossil shares over time globally, and 4 for each of the big 4 countries (USA, China, Russia, India).
 
 ### 3. How differently have countries transitioned their energy mixes between 1985 and 2024?
-
-**DONE!!!**
 
 - 3 plots included: 1 for each catagory with the percentage point change of each country between 1985 and 2024
 
